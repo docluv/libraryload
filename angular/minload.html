@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Angular Library Minified from AWS Load Time Tester</title>
+</head>
+<body>
+
+    <div class="eval-time" style="font-size:4em;"></div>
+
+    <script>var start = +new Date();</script>
+    <script src="http://images.professionalaspnet.com/angular.min.js"></script>
+    <script>
+        var end = +new Date();
+        document.querySelector(".eval-time").textContent = (end - start) / 1000 + " seconds";
+
+        console.log("start - " + start);
+        console.log("end - " + end);</script>
+</body>
+</html>

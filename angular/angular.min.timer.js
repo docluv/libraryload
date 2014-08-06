@@ -1,3 +1,4 @@
+var start = +new Date();
 
 /*
  AngularJS v1.2.1
@@ -5744,3 +5745,10 @@
 })(window,
     document);
 !angular.$$csp() && angular.element(document).find("head").prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\\:form{display:block;}.ng-animate-start{clip:rect(0,auto,auto,0);-ms-zoom:1.0001;}.ng-animate-active{clip:rect(-1px,auto,auto,0);-ms-zoom:1;}</style>');
+
+
+var end = +new Date();
+document.querySelector(".eval-time").textContent = (end - start)/1000 + " seconds";
+
+console.log("start - " + start);
+console.log("end - " + end);
